@@ -8,6 +8,7 @@ const Todos = (props) => {
       {props.todos.map((todo) => {
         return (
           <TodoItem todo={todo} onDelete={props.onDelete(todo)} />
+          
         );
       })}
     </div>
