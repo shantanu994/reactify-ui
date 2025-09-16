@@ -26,6 +26,7 @@ function App() {
       desc: desc,
     }
     setTodos([...todos, myTodo]);
+    
     console.log(myTodo);
   }
 
