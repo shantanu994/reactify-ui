@@ -1,14 +1,8 @@
 import React from "react";
 
 const Footer = () => {
-  let footerStyle={
-      position: "absolute",
-      top: "95vh",
-      width: "100%",
-      borderRadius: "10px",
-    }
   return (
-    <footer className="bg-dark text-light text-center" style={footerStyle}>
+    <footer className="bg-dark text-light text-center" >
       <p className="text-center">
         Copyright © 2023 My Todos App
         </p>
