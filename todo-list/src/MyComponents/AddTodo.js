@@ -11,6 +11,8 @@ const AddTodo = ({ addTodo }) => {
       alert("Title or Description cannot be blank");
     }else{
       addTodo(title, desc);
+      setTitle("");
+      setDesc("");
     }
 
 

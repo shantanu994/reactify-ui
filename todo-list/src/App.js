@@ -1,47 +1,45 @@
 import "./App.css";
 import Header from "./MyComponents/Header.js";
 import Footer from "./MyComponents/Footer.js";
-import Todos from "./MyComponents/Todos.js";  
+import Todos from "./MyComponents/Todos.js";
 import AddTodo from "./MyComponents/AddTodo.js";
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 
 function App() {
+  let initTTodos;
+  if (localStorage.getItem("todos") === null) {
+    initTTodos = [];
+  } else {
+    initTTodos = JSON.parse(localStorage.getItem("todos"));
+  }
+  const [todos, setTodos] = useState(initTTodos);
+
   const onDelete = (todo) => {
-    console.log("I am onDelete of todo ", todo);
-    // Deleting this way in react does not delete the element from the array
-    // let index = todos.indexOf(todo);
-    // todos.splice(index,1);
-    
-    setTodos(todos.filter((e) => {
-      return e !== todo;
-    }));
+    const newTodos = todos.filter((e) => e !== todo);
+    setTodos(newTodos);
+    localStorage.setItem("todos", JSON.stringify(newTodos));
   };
 
   const addTodo = (title, desc) => {
-    console.log("I am adding this todo", title, desc);
-    let sno = todos[todos.length -1].sno + 1;
+    let sno = todos.length === 0 ? 1 : todos[todos.length - 1].sno + 1;
     const myTodo = {
       sno: sno,
       title: title,
       desc: desc,
-    }
+    };
     setTodos([...todos, myTodo]);
-    console.log(myTodo);
-  }
+  };
 
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
-
-  const [todos, setTodos] = useState([
-    { id: 1, title: "Todo 1", desc: "Description 1", completed: false },
-    { id: 2, title: "Todo 2", desc: "Description 2", completed: true },
-    { id: 3, title: "Todo 3", desc: "Description 3", completed: false },
-  ]);
   return (
     <>
-    <Header title="TODO's App" searchbar={false} />
-    <AddTodo addTodo={addTodo} />
-    <Todos todos={todos} onDelete={onDelete} />
-    <Footer />
+      <Header title="TODO's App" searchbar={false} />
+      <AddTodo addTodo={addTodo} />
+      <Todos todos={todos} onDelete={onDelete} />
+      <Footer />
     </>
   );
 }
