@@ -6,13 +6,13 @@ import AddTodo from "./MyComponents/AddTodo.js";
 import { useState, useEffect } from "react";
 
 function App() {
-  let initTTodos;
+  let initTodos;
   if (localStorage.getItem("todos") === null) {
-    initTTodos = [];
+    initTodos = [];
   } else {
-    initTTodos = JSON.parse(localStorage.getItem("todos"));
+    initTodos = JSON.parse(localStorage.getItem("todos"));
   }
-  const [todos, setTodos] = useState(initTTodos);
+  const [todos, setTodos] = useState(initTodos);
 
   const onDelete = (todo) => {
     const newTodos = todos.filter((e) => e !== todo);
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Header title="TODO's App" searchbar={false} />
+      <Header title="TODO's App"  searchbar={false} />
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />

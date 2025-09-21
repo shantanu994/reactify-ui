@@ -8,7 +8,7 @@ const Todos = (props) => {
     }
   return (
     <div className="container" style={mystyle}>
-      <h3 className=" my-3">Todos List</h3>
+      <h2 className=" my-3">Todos List</h2>
       {props.todos.length === 0
         ? "No Todos to display"
         : props.todos.map((todo) => {

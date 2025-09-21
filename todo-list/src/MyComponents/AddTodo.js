@@ -18,8 +18,8 @@ const AddTodo = ({ addTodo }) => {
 
   }
   return (
-    <div className="container" my-3>
-      <h3>Add Todo</h3>
+    <div className="add-todo" my-3>
+      <h2>Add Todo</h2>
       <form onSubmit={submit}>
         <div className="mb-3">
           <label htmlFor="text" className="form-label">
