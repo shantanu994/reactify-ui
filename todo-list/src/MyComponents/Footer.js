@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light text-center" >
+    <footer className="footer" >
       <p className="text-center">
         Copyright © 2023 My Todos App
         </p>

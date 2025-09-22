@@ -1,25 +1,28 @@
 .header-title {
   text-align: center;
-  color: black;
+  background: linear-gradient(45deg, #2196F3, #3F51B5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 2rem;
-  background-color: grey;
-  border-radius: 2rem;
   margin: 2rem auto;
   width: 40%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.add-todo{
+.add-todo {
   text-align: center;
   margin: 2rem auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   width: 60%;
   padding: 2rem;
   border: 2px solid grey;
   border-radius: 10px;
   background-color: #f9f9f9;
 }
-.add-todo h3 {
+.add-todo h2 {
   margin-bottom: 1rem;
+  background: linear-gradient(45deg, #2196F3, #3F51B5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #333;
 }
 .container {
@@ -29,8 +32,54 @@
   margin: auto;
   padding: 2rem;
 }
-.container h2{
+.container h2 {
   text-align: center;
   color: black;
   margin-bottom: 1rem;
+}
+.todo-item {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.todo-item h4 {
+  margin: 0;
+  color: #555;
+}
+.deletebtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.deletebtn:hover {
+  background-color: darkred;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: grey;
+  color: black;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer p {
+  margin: 0;
+}
+.addbtn{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  margin: 1rem 0;
+  height: 3rem;
 }
