@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <Header title="TODO's App"  searchbar={false} />
+      <Header title="TODO's App" />
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />
