@@ -1,7 +1,20 @@
 import React from "react";
 import TodoItem from "../MyComponents/TodoItem";
+import { useState } from 'react';
 
 const Todos = (props) => {
+
+  const [completedTodos, setCompletedTodos] = useState([]);
+
+  const handleCheckboxChange = (todo) => {
+    if (completedTodos.includes(todo.sno)) {
+      setCompletedTodos(completedTodos.filter((sno) => sno !== todo.sno));
+    } else {
+      setCompletedTodos([...completedTodos, todo.sno]);
+    }
+    
+  };
+
   let mystyle = {
     minHeight: "70vh",
     margin: "40px auto",
