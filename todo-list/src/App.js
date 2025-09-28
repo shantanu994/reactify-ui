@@ -16,6 +16,7 @@ function App() {
 
   const onDelete = (todo) => {
     const newTodos = todos.filter((e) => e !== todo);
+    
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
   };
