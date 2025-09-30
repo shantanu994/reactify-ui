@@ -31,3 +31,16 @@ It demonstrates basic task management features like adding, toggling, and deleti
 
    ```bash
    git clone https://github.com/shantanu994/reactify-ui.git
+   cd reactify-ui/todo-list
+
+2. Install Dependancies:
+
+   ```bash
+   npm install
+
+3. Run the Development Server
+
+   ```bash
+   npm start
+
+   
