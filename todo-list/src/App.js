@@ -3,6 +3,7 @@ import Header from "./MyComponents/Header.js";
 import Footer from "./MyComponents/Footer.js";
 import Todos from "./MyComponents/Todos.js";
 import AddTodo from "./MyComponents/AddTodo.js";
+import CounterCards from "./MyComponents/CounterCards.js";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
   return (
     <>
       <Header title="TODO's App" />
+      <CounterCards />
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />
