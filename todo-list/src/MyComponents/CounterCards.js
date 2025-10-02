@@ -1,25 +1,25 @@
 import React from "react";
 
-const counterCards = () => {
-  let taskcount = 0;
-  let CompletedTasks = 0;
-  let PendingTasks = 0;
+const CounterCards = ({ todos }) => {
+  let taskcount = todos ? todos.length : 0;
+  let CompletedTasks = todos ? todos.filter((todo) => todo.completed).length : 0;
+  let PendingTasks = taskcount - CompletedTasks;
   return (
     <div className="CounterCards">
       <div className="cards">
-        <p className="cardsdesc">{taskcount}</p>
-        <h1 className="cardstitle">Task Count</h1>
+        <p className="cardsdesc2">{taskcount}</p>
+        <h3 className="cardstitle">Task Count</h3>
       </div>
       <div className="cards">
-        <p className="cardsdesc1">{CompletedTasks}</p>
-        <h1 className="cardstitle">Completed Tasks</h1>
+        <p className="cardsdesc">{CompletedTasks}</p>
+        <h3 className="cardstitle">Completed Tasks</h3>
       </div>
       <div className="cards">
-        <p className="cardsdesc2">{PendingTasks}</p>
-        <h1 className="cardstitle">Pending Tasks</h1>
+        <p className="cardsdesc1">{PendingTasks}</p>
+        <h3 className="cardstitle">Pending Tasks</h3>
       </div>
     </div>
   );
 };
 
-export default counterCards;
+export default CounterCards;

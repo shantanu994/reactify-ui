@@ -28,6 +28,7 @@ function App() {
       sno: sno,
       title: title,
       desc: desc,
+      completed: false 
     };
     setTodos([...todos, myTodo]);
   };
@@ -39,7 +40,7 @@ function App() {
   return (
     <>
       <Header title="TODO's App" />
-      <CounterCards />
+      <CounterCards todos={todos} /> 
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />
