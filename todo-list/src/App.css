@@ -45,6 +45,12 @@
   margin-bottom: 1rem;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.todo-item.completed {
+  background-color: #f0f8f0;
+  border-color: #4CAF50;
+  opacity: 0.7;
 }
 .todo-item h4 {
   margin: 0;
@@ -57,9 +63,32 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 .deletebtn:hover {
   background-color: darkred;
+}
+.completebtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.completebtn:hover {
+  background-color: #45a049;
+}
+.incompletebtn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.incompletebtn:hover {
+  background-color: #e68900;
 }
 .footer {
   text-align: center;

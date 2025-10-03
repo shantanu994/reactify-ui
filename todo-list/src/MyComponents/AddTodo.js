@@ -1,21 +1,19 @@
 import React from "react";
 import { useState } from 'react';
 
-const AddTodo = ({ addTodo }) => {
+const AddTodo = (props) => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
 
   const submit = (e) => {
     e.preventDefault();
-    if(!title || !desc){
+    if(title == "" || desc == ""){
       alert("Title or Description cannot be blank");
     }else{
-      addTodo(title, desc);
+      props.addTodo(title, desc);
       setTitle("");
       setDesc("");
     }
-
-
   }
   return (
     <div className="add-todo" my-3>
