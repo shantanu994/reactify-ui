@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactify-ui/static/css/main.702e5e5c.css",
-    "main.js": "/reactify-ui/static/js/main.d88050a5.js",
+    "main.css": "/reactify-ui/static/css/main.fc37cf24.css",
+    "main.js": "/reactify-ui/static/js/main.9a5a39d4.js",
     "static/js/453.aec2852f.chunk.js": "/reactify-ui/static/js/453.aec2852f.chunk.js",
     "index.html": "/reactify-ui/index.html",
-    "main.702e5e5c.css.map": "/reactify-ui/static/css/main.702e5e5c.css.map",
-    "main.d88050a5.js.map": "/reactify-ui/static/js/main.d88050a5.js.map",
+    "main.fc37cf24.css.map": "/reactify-ui/static/css/main.fc37cf24.css.map",
+    "main.9a5a39d4.js.map": "/reactify-ui/static/js/main.9a5a39d4.js.map",
     "453.aec2852f.chunk.js.map": "/reactify-ui/static/js/453.aec2852f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.702e5e5c.css",
-    "static/js/main.d88050a5.js"
+    "static/css/main.fc37cf24.css",
+    "static/js/main.9a5a39d4.js"
   ]
 }
