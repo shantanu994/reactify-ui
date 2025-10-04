@@ -28,7 +28,7 @@ function App() {
       sno: sno,
       title: title,
       desc: desc,
-      completed: false 
+      completed: false,
     };
     setTodos([...todos, myTodo]);
   };
@@ -41,7 +41,7 @@ function App() {
           sno: todos[i].sno,
           title: todos[i].title,
           desc: todos[i].desc,
-          completed: !todos[i].completed
+          completed: !todos[i].completed,
         };
         newTodos.push(updatedTodo);
       } else {
@@ -53,11 +53,19 @@ function App() {
 
   return (
     <>
-      <Header title="TODO's App" />
-      <CounterCards todos={todos} /> 
-      <AddTodo addTodo={addTodo} />
-      <Todos todos={todos} onDelete={onDelete} toggleComplete={toggleComplete} />
-      <Footer />
+      <div className="components">
+        <Header title="TODO's App" />
+        <CounterCards todos={todos} />
+        <div className="main-content">
+          <AddTodo addTodo={addTodo} />
+          <Todos
+            todos={todos}
+            onDelete={onDelete}
+            toggleComplete={toggleComplete}
+          />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }
