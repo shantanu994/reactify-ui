@@ -15,14 +15,14 @@ A modern and attractive **Todo List app** built using **React** with beautiful g
 
 ## Features
 
-- ➕ **Add New Todos** – Create tasks with title and description
-- ✅ **Toggle Completion** – Mark todos as complete/incomplete with visual feedback
-- ❌ **Delete Todos** – Remove unwanted tasks
-- � **Todo Statistics** – View counters for total, completed, and pending todos
-- 🎨 **Modern UI** – Beautiful gradients, card effects, and hover animations
-- 📱 **Responsive Design** – Optimized for desktop and mobile devices
-- 🔄 **Side-by-Side Layout** – Add todos and view list simultaneously
-- ⚡ **Lightweight** – Fast performance with minimal dependencies
+-  **Add New Todos** – Create tasks with title and description
+-  **Toggle Completion** – Mark todos as complete/incomplete with visual feedback
+-  **Delete Todos** – Remove unwanted tasks
+-  **Todo Statistics** – View counters for total, completed, and pending todos
+-  **Modern UI** – Beautiful gradients, card effects, and hover animations
+-  **Responsive Design** – Optimized for desktop and mobile devices
+-  **Side-by-Side Layout** – Add todos and view list simultaneously
+-  **Lightweight** – Fast performance with minimal dependencies
 
 ---
 
